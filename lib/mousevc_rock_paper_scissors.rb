@@ -10,7 +10,7 @@ module MousevcRockPaperScissors
 			super(
 				:controller => 'GameController',
 				:model => 'GameModel',
-				:views => 'lib/views',
+				:views => "#{File.dirname(__FILE__)}/views",
 				:action => :menu,
 				:looping => true,
 				:system_clear => true
